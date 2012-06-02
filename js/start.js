@@ -4,7 +4,7 @@ var PhotoSearcher = require("./photo.searcher"),
 app = {};
 
 app.PhotoSearcher = PhotoSearcher;
-app.PhotoViewer  = PhotoViewer;
+app.PhotoViewer   = PhotoViewer;
 
 app.PhotoSearcher.init();
 
