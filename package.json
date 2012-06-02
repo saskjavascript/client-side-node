@@ -1,0 +1,28 @@
+{
+  "author": "David Mosher <davidmosher@gmail.com> (www.davemo.com)",
+  "name": "js-clientside",
+  "description": "SK.JS package",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "~2.5.9",
+    "browserify": "~1.11.1",
+    "request": "~2.9.202",
+    "jquery-browserify": "~1.7.2",
+    "underscore": "~1.3.3",
+    "uglify-js": "~1.3.0"
+  },
+  "devDependencies": {
+    "node-dev": "~0.2.3",
+    "wach": "~0.9.1"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "devserver" : "node-dev app.js",
+    "devwach"   : "wachs -o **/*.js, node app.js",
+    "minify"    : "browserify js/start.js -o js/bundle.js && uglifyjs js/bundle.js > js/bundle.min.js"  
+  }
+}
