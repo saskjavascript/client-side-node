@@ -1,4 +1,4 @@
-var $           = require('jquery-browserify');
+var $           = require('jquery-browserify'),
     PhotoViewer = require('./photo.viewer');
 
 var PhotoSearcher = {
